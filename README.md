@@ -142,21 +142,25 @@ Utilizando as coordenadas e medindo a distancia haversine de todo o percuros pod
 | Número de aviões usados transporte estrutura Formula 1              | 6           | https://blog.gilbertintl.com/the-logistics-of-formula-1-transporting-1000-tonnes-around-the-globe#:~:text=As%20many%20as%20300%20trucks,they'd%20stretch%20over%205km.&text=6%20to%207%20Boeing%20747,km%20over%20the%20race%20period. |
 
 #### Distancia:
+
 $
 132179 [km]
 $
 
 #### Volume de Combustivel de aviação por temporada:
+
 $
 V = 132179 [km] * 12 [L/km] * 6 [aviões] = 9516288 [L]
 $
 
 #### Preço gasto com combustivel de aviação por temporada:
+
 $
 P =\frac{ 9516288 [L] * 3.30 [U\$/galon] } { 3,78541 [L/galon]} =  U\$ 8,295,997.10
 $
 
 #### Pegada de carbono por temporada:
+
 $
 C = 9516288 [L] * 0.8025 [g/mL] * 3.16 [Kg] = 24,133,876 Kg CO_2
 $
