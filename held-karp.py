@@ -1,8 +1,10 @@
 import numpy as np
 import itertools
+from utils import *
+from cities import *
 
 def distance(point1, point2):
-    return np.sqrt((point1[0] - point2[0])**2 + (point1[1] - point2[1])**2)
+    return haversine(point1, point2)
 
 def held_karp(cities):
     n = len(cities)
@@ -45,15 +47,13 @@ def held_karp(cities):
     return opt, path
 
 # Use the function:
-test = [
-    [0.0, 0.0],
-    [1.0, 1.0],
-    [3.0, 1.0],
-    [4.0, 0.0],
-    [4.0, -1.0],
-    [2.0, -2.0],
-]
+points = []
+for i in range(23):
+    points.append((coordinates[i][0], coordinates[i][1]))
+print(points)
 
-cities = [(0,0), (1,1), (3,1), (4,0), (4,-1), (2,-2)]
-# cities = [(0,0), (0,1), (1,0), (1,1), (2,0), (0,2), (2,2), (1,2), (2,1), (1,1), (3,0), (0,3), (3,3), (0,4), (4,0), (4,4), (5,0), (0,5), (5,5), (2,3), (3,2), (4,2), (2,4)]
-print(held_karp(cities))
+opt, path = held_karp(points)
+
+print(f"Optimal cost: {opt}")
+cities_path = [cities[i] for i in path]
+print(f"Path: {cities_path}")
