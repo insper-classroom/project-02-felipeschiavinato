@@ -143,27 +143,27 @@ Utilizando as coordenadas e medindo a distancia haversine de todo o percuros pod
 
 #### Distancia:
 
-$
+$$
 132179 [km]
-$
+$$
 
 #### Volume de Combustivel de aviação por temporada:
 
-$
+$$
 V = 132179 [km] * 12 [L/km] * 6 [aviões] = 9516288 [L]
-$
+$$
 
 #### Preço gasto com combustivel de aviação por temporada:
 
-$
+$$
 P =\frac{ 9516288 [L] * 3.30 [U\$/galon] } { 3,78541 [L/galon]} =  U\$ 8,295,997.10
-$
+$$
 
 #### Pegada de carbono por temporada:
 
-$
+$$
 C = 9516288 [L] * 0.8025 [g/mL] * 3.16 [Kg] = 24,133,876 Kg CO_2
-$
+$$
 
 
 ## Metodologia
